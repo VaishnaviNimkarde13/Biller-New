@@ -493,7 +493,7 @@ function Sidebar() {
                   display: isExpanded ? "block" : "none",
                 }}
               >
-                COMMAND
+                DASHBOARD
               </Typography>
               {!isExpanded && (
                 <HandIcon
@@ -669,7 +669,7 @@ function Sidebar() {
                     fontFamily: "'Roboto', sans-serif",
                   }}
                 >
-                  ENCOUNTERS
+                  CLAIMS
                 </Typography>
               )}
             </ListItemButton>

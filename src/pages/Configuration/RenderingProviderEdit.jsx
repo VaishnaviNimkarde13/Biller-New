@@ -928,6 +928,23 @@ export default function RenderingProviderEdit() {
               <IconButton
                 size="small"
                 aria-label="Delete address"
+                onClick={() =>
+                  setForm((prev) => ({
+                    ...prev,
+                    addressType: "",
+                    address1: "",
+                    address2: "",
+                    zipCode: "",
+                    city: "",
+                    state: "",
+                    country: "",
+                    mobilePhone: "",
+                    workContact: "",
+                    phone: "",
+                    fax: "",
+                    email: "",
+                  }))
+                }
                 sx={{
                   p: "4px",
                   "&:hover": { bgcolor: "#EEF4FF" },

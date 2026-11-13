@@ -71,6 +71,7 @@ import {
   PrinterIcon,
   ListIcon,
   EyeVisible,
+  EyeIcon,
   Share,
   DeleteIcon,
   SearchIcon,
@@ -880,11 +881,12 @@ function StatusPill({
 
 function RowActionIcons({ onEdit, onCheck }) {
   const items = [
-    ["View list", Icon2, undefined],
-    ["Clipboard", Icon3, undefined],
-    ["Folder", Icon4, undefined],
-    ["Document", Icon5, undefined],
-    ["Check", Icon6, onCheck],
+    ["Transaction", Icon2, undefined],
+    ["View Form", EyeIcon, undefined],
+    ["Batch Action", Icon3, undefined],
+    ["File List", Icon4, undefined],
+    ["Remark", Icon5, onCheck],
+    ["Task", Icon6, undefined],
   ];
 
   const handleEditClick = (e) => {
@@ -1456,17 +1458,17 @@ const DOB_LIST = [
 const BILLED_LIST = [1240, 320, 785, 2450, 150, 980, 615, 1890, 430, 275, 3200];
 const COPAY_LIST = [75, 20, 40, 100, 15, 60, 35, 90, 25, 10, 120];
 const CPT_LIST = [
-  "11980; 00934",
-  "99213; 36415",
-  "93000; 80053",
-  "99214; 85025",
-  "71046; 99213",
-  "99203; 81002",
-  "11980; 99212",
-  "99215; 93000",
-  "73030; 99213",
-  "99202; 82947",
-  "99213; 80061",
+  "11980",
+  "99213",
+  "93000",
+  "99214",
+  "71046",
+  "99203",
+  "11980",
+  "99215",
+  "73030",
+  "99202",
+  "99213",
 ];
 const MOD_LIST = [
   "26, LT",
@@ -1482,9 +1484,9 @@ const MOD_LIST = [
   "59",
 ];
 const ICD_LIST = [
-  "S11.011D, Z20.4",
+  "S11.011D",
   "J02.9",
-  "I10, E11.9",
+  "I10",
   "M54.5",
   "R07.9",
   "K21.9",
